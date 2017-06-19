@@ -29,3 +29,30 @@ Roles provide logical grouping of cookbooks and other roles. A sample role can b
 Getting Started
 -------------------------
 Now that you have the chef-repo ready to go, check out [Learn Chef](https://learn.chef.io/) to proceed with your workstation setup. If you have any questions about Chef you can always ask [our support team](https://www.chef.io/support/) for a helping hand.
+
+CrashCourse
+-----------
+
+
+Comands
+- berks install :: Manejador de dependencias
+- berks upload :: Realiza cambios a tu chef server
+- knife client list :: Show keys!
+- knife cookbook list :: Show cookbook list from server
+- knife boostrap FQDN -x USER -P PWD —sudo -N NODENAME :: Inicia un nodo
+- knife node run_list add NODENAME "recipe[apache]" :: Agrega receta a un nodo
+- knife node show NODENAME -a cloud :: Info de tus nodos locales
+- knife node show NODENAME -a cloud.public_ipv4 :: Identifica unicamente el atributo public_ipv4
+- knife search "*:*" -a cloud 
+- knife search "*:*" -a cloud.public_ipv4
+
+
+
+Resources
+---------
+- http://bit.ly/1Xoai9R
+- http://bit.ly/1pQo0qd
+- http://bit.ly/1pQnwQZ
+- https://learn.chef.io/modules/beyond-the-basics/
+- https://docs.chef.io/berkshelf.html
+- https://api.chef.io:443/organizations/ORGANIZATIONNAME
